@@ -1,0 +1,4 @@
+displayName = CharLoader
+author = Tyfyter
+version = 1.0
+side = Client
