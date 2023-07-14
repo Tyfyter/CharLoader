@@ -1,1 +1,6 @@
-CharLoader is a pretty cool mod, it does...this. Modify this file with a description of your mod.
+Allows other mods to add characters to preexisting fonts without risking overwriting any characters from vanilla or other mods
+Documentation:
+AddCharacter/AddChar: font (DynamicSpriteFont), texture (Texture2D), glyph (Rectangle), padding (Rectangle), kerning (Vector3), <optional name (string)>
+GetCharacter/AddChar: font (DynamicSpriteFont), name (string)
+To change characters, don't use this unless you know what you're doing, index is not relative
+SetCharacter/AddChar: font (DynamicSpriteFont), index (char), texture (Texture2D), glyph (Rectangle), padding (Rectangle), kerning (Vector3)
