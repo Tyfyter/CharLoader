@@ -87,7 +87,7 @@ namespace CharLoader {
 					return GetNamedChar((DynamicSpriteFont)args[1], (string)args[2]);
 				}
 			}
-			throw new ArgumentException($"{args[0]} is not a valid function, you probably have the wrong mod, this is {DisplayName} and its only functions are AddCharacter/AddChar and GetCharacter/GetChar");
+			throw new ArgumentException($"{args[0]} is not a valid function, you probably have the wrong mod, this is {DisplayName} and all of its functions are listed in its description");
 		}
 		public delegate void SetCharFunc(DynamicSpriteFont font, char index, Texture2D texture, Rectangle glyph, Rectangle padding, Vector3 kerning);
 		SetCharFunc _SetCharacter;
