@@ -20,7 +20,7 @@ namespace CharLoader {
 			charCount = new();
 			namedChars = new();
 			FieldInfo spriteCharacters = typeof(DynamicSpriteFont).GetField("_spriteCharacters", BindingFlags.NonPublic | BindingFlags.Instance);
-			Type SpriteCharacterData = typeof(DynamicSpriteFont).GetNestedType("SpriteCharacterData", BindingFlags.NonPublic | BindingFlags.Instance);
+			Type SpriteCharacterData = typeof(DynamicSpriteFont).GetNestedType("SpriteCharacterData", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
 			Type dict = typeof(Dictionary<,>).MakeGenericType(typeof(char), SpriteCharacterData);
 			MethodInfo set = dict.GetMethod("set_Item");
 			ConstructorInfo ctor = SpriteCharacterData.GetConstructor(new Type[] {
